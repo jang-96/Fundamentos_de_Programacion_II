@@ -21,7 +21,7 @@ class Persona(ABC):
 
 
 class Agente(Persona):
-    """Representa a un agente de ventas monitorizado."""
+    """Representa a un agente de ventas monitorizado, clase hija de clase Persona."""
     def __init__(self, id_: str, nombre: str, equipo_id: Optional[str] = None,
                  llamadas_atendidas: int = 0, total_time_seconds: int = 0,
                  ventas_realizadas: int = 0, meta_ventas: int = 0):
@@ -269,4 +269,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
